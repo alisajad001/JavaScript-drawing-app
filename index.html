@@ -11,6 +11,28 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Drawing Tools -->
+    <nav id="nav">
+      <div class="header">
+        <h1 class="title">Drawing App</h1>
+        <p class="subtitle">Coded by Ali Sajad</p>
+      </div>
+
+      <div class="tools">
+        <h2>Tools</h2>
+
+        <div class="tools_panel">
+          <label for="color">Color: </label>
+          <input type="color" id="color" />
+          <label for="brushSize">Brush Size: </label>
+          <input type="number" min="7" max="20" value="7" id="brushSize" />
+        </div>
+
+        <button id="erase-all">Erase all</button>
+      </div>
+    </nav>
+
+    <canvas id="canvas"></canvas>
     <script src="js/main.js"></script>
   </body>
 </html>
